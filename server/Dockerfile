@@ -26,7 +26,7 @@ ENV TURBO_TOKEN=$TURBO_TOKEN
 
 RUN pnpm exec turbo --filter server build
 
-FROM mcr.microsoft.com/playwright:v1.40.1-focal as production
+FROM mcr.microsoft.com/playwright:v1.41.2-focal as production
 
 WORKDIR /app
 
